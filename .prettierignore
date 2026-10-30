@@ -3,3 +3,5 @@ node_modules
 public/samples
 package-lock.json
 docs/reverse-engineering
+db/sample-data.json
+docs/qa

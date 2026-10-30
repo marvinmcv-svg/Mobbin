@@ -29,7 +29,16 @@ const f = (p: Record<string, string> = {}) => parseFilters(p);
 describe("filters", () => {
   it("falls back to safe defaults for junk input", () => {
     const x = parseFilters({ platform: "nope", style: "Robert'); drop", q: "  " });
-    expect(x).toEqual({ platform: "site", style: undefined, q: undefined, pattern: undefined, element: undefined, category: undefined, app: undefined, sort: undefined });
+    expect(x).toEqual({
+      platform: "site",
+      style: undefined,
+      q: undefined,
+      pattern: undefined,
+      element: undefined,
+      category: undefined,
+      app: undefined,
+      sort: undefined,
+    });
   });
   it("defaults to relevance only with a query", () => {
     expect(effectiveSort(f())).toBe("latest");
@@ -73,7 +82,9 @@ describe("listScreens", () => {
 
   it("filters by category", async () => {
     const page = await listScreens(pool, f({ category: "finance" }));
-    expect(new Set(page.items.map((s) => s.app.slug))).toEqual(new Set(["mintbridge", "ferrous", "ledgerleaf"]));
+    expect(new Set(page.items.map((s) => s.app.slug))).toEqual(
+      new Set(["mintbridge", "ferrous", "ledgerleaf"]),
+    );
   });
 
   it("sorts by popularity", async () => {
@@ -96,7 +107,8 @@ describe("listScreens", () => {
 
 describe("detail queries", () => {
   it("gets a screen with tags and its full capture", async () => {
-    const [first] = (await listScreens(pool, f({ app: "quillfox", pattern: "hero-section" }))).items;
+    const [first] = (await listScreens(pool, f({ app: "quillfox", pattern: "hero-section" })))
+      .items;
     const s = await getScreen(pool, first!.id);
     expect(s?.app.name).toBe("Quillfox");
     expect(s?.fullImagePath).toBe("/samples/quillfox/full.svg");

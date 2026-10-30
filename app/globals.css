@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+/*
+ * Specimen design tokens. One source of truth, documented in docs/design-system.md.
+ * Light = warm paper and ink; dark = carbon and chalk. Accent is vermilion in both.
+ */
+:root {
+  --paper: #f5f1ea;
+  --paper-raised: #fbf9f5;
+  --paper-sunken: #ebe5da;
+  --ink: #1a1714;
+  --ink-soft: #5b544b;
+  --ink-faint: #8d857a;
+  --rule: #d9d1c3;
+  --accent: #d6401f;
+  --accent-ink: #ffffff;
+  --focus: #2457d6;
+  --scrim: rgb(20 17 14 / 0.55);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --paper: #141311;
+  --paper-raised: #1c1a17;
+  --paper-sunken: #0d0c0b;
+  --ink: #f0ebe2;
+  --ink-soft: #b5ada1;
+  --ink-faint: #8a8278;
+  --rule: #34302a;
+  --accent: #ff6a45;
+  --accent-ink: #1a0d08;
+  --focus: #8fb0ff;
+  --scrim: rgb(0 0 0 / 0.6);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141311;
+    --paper-raised: #1c1a17;
+    --paper-sunken: #0d0c0b;
+    --ink: #f0ebe2;
+    --ink-soft: #b5ada1;
+    --ink-faint: #8a8278;
+    --rule: #34302a;
+    --accent: #ff6a45;
+    --accent-ink: #1a0d08;
+    --focus: #8fb0ff;
+    --scrim: rgb(0 0 0 / 0.6);
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-paper-sunken: var(--paper-sunken);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-scrim: var(--scrim);
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  --radius-tile: 6px;
+  --radius-frame: 14px;
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+  --shadow-lift: 0 1px 0 var(--rule), 0 12px 32px -16px rgb(26 23 20 / 0.35);
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  background: var(--paper);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee 60s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

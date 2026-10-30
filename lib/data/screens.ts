@@ -19,11 +19,17 @@ function where(f: Filters, params: unknown[]) {
   };
   const clauses = ["s.status = 'published'", `a.platform = ${bind(f.platform)}`];
   if (f.pattern)
-    clauses.push(`exists (select 1 from screen_patterns sp join patterns p on p.id = sp.pattern_id where sp.screen_id = s.id and p.slug = ${bind(f.pattern)})`);
+    clauses.push(
+      `exists (select 1 from screen_patterns sp join patterns p on p.id = sp.pattern_id where sp.screen_id = s.id and p.slug = ${bind(f.pattern)})`,
+    );
   if (f.style)
-    clauses.push(`exists (select 1 from screen_styles ss join styles st on st.id = ss.style_id where ss.screen_id = s.id and st.slug = ${bind(f.style)})`);
+    clauses.push(
+      `exists (select 1 from screen_styles ss join styles st on st.id = ss.style_id where ss.screen_id = s.id and st.slug = ${bind(f.style)})`,
+    );
   if (f.element)
-    clauses.push(`exists (select 1 from screen_ui_elements se join ui_elements e on e.id = se.element_id where se.screen_id = s.id and e.slug = ${bind(f.element)})`);
+    clauses.push(
+      `exists (select 1 from screen_ui_elements se join ui_elements e on e.id = se.element_id where se.screen_id = s.id and e.slug = ${bind(f.element)})`,
+    );
   if (f.category) clauses.push(`c.slug = ${bind(f.category)}`);
   if (f.app) clauses.push(`a.slug = ${bind(f.app)}`);
   let rank = "0";
@@ -60,7 +66,8 @@ const CARD_COLUMNS = `
       select e.name, e.slug, 'element', 3 from screen_ui_elements se join ui_elements e on e.id = se.element_id where se.screen_id = s.id
     ) t), '[]') as tags`;
 
-const FROM = "from screens s join apps a on a.id = s.app_id left join categories c on c.id = a.category_id";
+const FROM =
+  "from screens s join apps a on a.id = s.app_id left join categories c on c.id = a.category_id";
 
 interface CardRow {
   id: string;
@@ -93,7 +100,12 @@ function toCard(r: CardRow): ScreenCard {
   };
 }
 
-export async function listScreens(db: Pool, f: Filters, offset = 0, limit = 24): Promise<Page<ScreenCard>> {
+export async function listScreens(
+  db: Pool,
+  f: Filters,
+  offset = 0,
+  limit = 24,
+): Promise<Page<ScreenCard>> {
   const params: unknown[] = [];
   const w = where(f, params);
   const sort = effectiveSort(f);
@@ -120,7 +132,15 @@ export async function getNeighbors(db: Pool, f: Filters, index: number) {
 export async function getScreen(db: Pool, id: string): Promise<ScreenDetail | null> {
   if (!/^[0-9a-f-]{36}$/.test(id)) return null;
   const { rows } = await db.query<
-    CardRow & { full_image_path: string | null; ai_description: string | null; captured_at: Date | null; version: string | null; flow_id: string | null; flow_name: string | null; flow_position: number | null }
+    CardRow & {
+      full_image_path: string | null;
+      ai_description: string | null;
+      captured_at: Date | null;
+      version: string | null;
+      flow_id: string | null;
+      flow_name: string | null;
+      flow_position: number | null;
+    }
   >(
     `select ${CARD_COLUMNS}, s.full_image_path, s.ai_description, s.captured_at, a.version, s.flow_id, f.name as flow_name, s.flow_position
      ${FROM} left join flows f on f.id = s.flow_id
@@ -135,7 +155,10 @@ export async function getScreen(db: Pool, id: string): Promise<ScreenDetail | nu
     description: r.ai_description,
     capturedAt: r.captured_at ? r.captured_at.toISOString().slice(0, 10) : null,
     appVersion: r.version,
-    flow: r.flow_id && r.flow_name ? { id: r.flow_id, name: r.flow_name, position: r.flow_position ?? 0 } : null,
+    flow:
+      r.flow_id && r.flow_name
+        ? { id: r.flow_id, name: r.flow_name, position: r.flow_position ?? 0 }
+        : null,
   };
 }
 
@@ -167,7 +190,10 @@ export async function getRelated(db: Pool, id: string, limit = 6): Promise<Scree
 
 export async function getFacets(db: Pool, platform: Platform): Promise<Facets> {
   const scope = platform === "site" ? "site" : "app";
-  const q = (sql: string) => db.query<FacetOption & { count: string }>(sql, [platform]).then((r) => r.rows.map((x) => ({ ...x, count: Number(x.count) })));
+  const q = (sql: string) =>
+    db
+      .query<FacetOption & { count: string }>(sql, [platform])
+      .then((r) => r.rows.map((x) => ({ ...x, count: Number(x.count) })));
   const [pattern, style, element, category] = await Promise.all([
     q(`select p.name, p.slug, count(s.id) from patterns p
        left join screen_patterns sp on sp.pattern_id = p.id
@@ -229,7 +255,14 @@ export interface FlowDetail {
   name: string;
   description: string | null;
   app: { name: string; slug: string; platform: Platform; iconPath: string | null };
-  steps: { id: string; imagePath: string; width: number; height: number; caption: string | null; position: number }[];
+  steps: {
+    id: string;
+    imagePath: string;
+    width: number;
+    height: number;
+    caption: string | null;
+    position: number;
+  }[];
 }
 
 export async function getFlow(db: Pool, id: string): Promise<FlowDetail | null> {
@@ -255,12 +288,18 @@ export async function getFlow(db: Pool, id: string): Promise<FlowDetail | null> 
 export async function getScreensByIds(db: Pool, ids: string[]): Promise<ScreenCard[]> {
   const valid = ids.filter((id) => /^[0-9a-f-]{36}$/.test(id)).slice(0, 200);
   if (!valid.length) return [];
-  const { rows } = await db.query<CardRow>(`select ${CARD_COLUMNS} ${FROM} where s.id = any($1::uuid[]) and s.status = 'published'`, [valid]);
+  const { rows } = await db.query<CardRow>(
+    `select ${CARD_COLUMNS} ${FROM} where s.id = any($1::uuid[]) and s.status = 'published'`,
+    [valid],
+  );
   const byId = new Map(rows.map((r) => [r.id, toCard(r)]));
   return valid.map((id) => byId.get(id)).filter((x): x is ScreenCard => !!x);
 }
 
-export async function createTakedown(db: Pool, input: { screenId: string; reason: string; contact: string }) {
+export async function createTakedown(
+  db: Pool,
+  input: { screenId: string; reason: string; contact: string },
+) {
   const { rows } = await db.query<{ id: string }>(
     "insert into takedown_requests (screen_id, reason, contact) values ($1, $2, $3) returning id",
     [input.screenId, input.reason, input.contact],

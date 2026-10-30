@@ -7,7 +7,10 @@ export async function migrate(pool: Pool): Promise<string[]> {
     "create table if not exists schema_migrations (name text primary key, applied_at timestamptz default now())",
   );
   const dir = path.join(__dirname, "migrations");
-  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".sql")).sort();
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".sql"))
+    .sort();
   const { rows } = await pool.query<{ name: string }>("select name from schema_migrations");
   const done = new Set(rows.map((r) => r.name));
   const applied: string[] = [];
@@ -34,6 +37,8 @@ if (require.main === module) {
   process.loadEnvFile?.(".env");
   const pool = new Pool({ connectionString: process.env.DATABASE_URL });
   migrate(pool)
-    .then((applied) => console.log(applied.length ? `applied: ${applied.join(", ")}` : "up to date"))
+    .then((applied) =>
+      console.log(applied.length ? `applied: ${applied.join(", ")}` : "up to date"),
+    )
     .finally(() => pool.end());
 }

@@ -53,7 +53,8 @@ export function effectiveSort(f: Filters): Sort {
 
 export function filtersToQuery(f: Partial<Filters>, extra: Record<string, string | number> = {}) {
   const sp = new URLSearchParams();
-  for (const [k, v] of Object.entries({ ...f, ...extra })) if (v !== undefined && v !== "") sp.set(k, String(v));
+  for (const [k, v] of Object.entries({ ...f, ...extra }))
+    if (v !== undefined && v !== "") sp.set(k, String(v));
   return sp.toString();
 }
 
