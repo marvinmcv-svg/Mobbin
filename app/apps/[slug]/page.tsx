@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ScreenGrid } from "@/components/ScreenGrid";
-import { db } from "@/lib/db";
-import { getApp, listScreens } from "@/lib/data/screens";
+import { repo } from "@/lib/repo";
 import { PLATFORM_LABELS, type Filters } from "@/lib/data/types";
 
 export const dynamic = "force-dynamic";
@@ -11,15 +10,15 @@ export const dynamic = "force-dynamic";
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const app = await getApp(db(), (await params).slug);
+  const app = await repo.getApp((await params).slug);
   return { title: app?.name ?? "Not found" };
 }
 
 export default async function AppPage({ params }: Props) {
-  const app = await getApp(db(), (await params).slug);
+  const app = await repo.getApp((await params).slug);
   if (!app) notFound();
   const filters: Filters = { platform: app.platform, app: app.slug, sort: "latest" };
-  const page = await listScreens(db(), filters, 0, 60);
+  const page = await repo.listScreens(filters, 0, 60);
 
   return (
     <div className="mx-auto max-w-[1440px] px-4 sm:px-8">

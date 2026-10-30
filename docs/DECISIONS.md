@@ -39,3 +39,10 @@ imagery. Replace it with your own captures in Phase C.
 **2026-10-30 · Viewer is a page, not yet an intercepted modal.** It already supports ←/→
 stepping within the result set, Esc back, prefetching the next item, zoom and the
 section/full-page toggle. Turning it into a parallel/intercepting route overlay is next.
+
+**2026-10-30 · Built-in sample store when no database is configured.** `lib/repo.ts`
+uses Postgres when `DATABASE_URL` is set, and otherwise uses a read-only in-memory store
+over `db/sample-data.json` (`lib/data/memory.ts`). This lets the Vercel deploy work before
+a hosted database exists. Parity tests (`tests/unit/memory.test.ts`) keep both stores
+returning the same results. In this mode, takedown requests are only logged, not stored, so
+attach a database before you invite anyone.

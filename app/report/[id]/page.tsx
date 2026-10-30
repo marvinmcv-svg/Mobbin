@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ReportForm } from "@/components/ReportForm";
-import { db } from "@/lib/db";
-import { getScreen } from "@/lib/data/screens";
+import { repo } from "@/lib/repo";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Report an item" };
 
 export default async function ReportPage({ params }: { params: Promise<{ id: string }> }) {
-  const screen = await getScreen(db(), (await params).id);
+  const screen = await repo.getScreen((await params).id);
   if (!screen) notFound();
   return (
     <div className="mx-auto max-w-xl px-4 pt-12">

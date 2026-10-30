@@ -20,6 +20,13 @@ npm run build && npm start   # http://localhost:3000
 
 Regenerate sample imagery with `npm run samples` (then `npm run db:seed`).
 
+## Deploying
+
+The Vercel project `marvzmobbin` builds this repo with Next.js defaults. With no
+`DATABASE_URL`, the app serves the bundled sample data read-only. To go live with real data, add
+`DATABASE_URL` (Postgres + pgvector, e.g. Supabase or Neon) in the project's environment
+variables, run `npm run db:migrate && npm run db:seed` against it, and redeploy.
+
 ## Checks
 
 ```bash

@@ -2,21 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FlowPlayer } from "@/components/FlowPlayer";
-import { db } from "@/lib/db";
-import { getFlow } from "@/lib/data/screens";
+import { repo } from "@/lib/repo";
 
 export const dynamic = "force-dynamic";
 
 type Props = { params: Promise<{ id: string }>; searchParams: Promise<{ step?: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const f = await getFlow(db(), (await params).id);
+  const f = await repo.getFlow((await params).id);
   return { title: f ? `${f.app.name} · ${f.name}` : "Not found" };
 }
 
 export default async function FlowPage({ params, searchParams }: Props) {
   const [{ id }, { step }] = await Promise.all([params, searchParams]);
-  const flow = await getFlow(db(), id);
+  const flow = await repo.getFlow(id);
   if (!flow || !flow.steps.length) notFound();
   const start = Math.max(
     0,

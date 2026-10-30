@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { BrowseShell } from "@/components/BrowseShell";
 import { PAGE_SIZE } from "@/lib/config";
-import { db } from "@/lib/db";
-import { getFacets, listScreens } from "@/lib/data/screens";
+import { repo } from "@/lib/repo";
 import { parseFilters, PLATFORM_LABELS } from "@/lib/data/types";
 
 export const dynamic = "force-dynamic";
@@ -19,8 +18,8 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
 export default async function BrowsePage({ searchParams }: Props) {
   const filters = parseFilters(await searchParams);
   const [facets, initial] = await Promise.all([
-    getFacets(db(), filters.platform),
-    listScreens(db(), filters, 0, PAGE_SIZE),
+    repo.getFacets(filters.platform),
+    repo.listScreens(filters, 0, PAGE_SIZE),
   ]);
   return <BrowseShell filters={filters} facets={facets} initial={initial} />;
 }

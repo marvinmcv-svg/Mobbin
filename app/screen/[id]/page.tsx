@@ -4,8 +4,7 @@ import { notFound } from "next/navigation";
 import { Viewer } from "@/components/Viewer";
 import { ScreenCard } from "@/components/ScreenCard";
 import { GRID_CLASSES } from "@/components/gridClasses";
-import { db } from "@/lib/db";
-import { getNeighbors, getRelated, getScreen } from "@/lib/data/screens";
+import { repo } from "@/lib/repo";
 import { filtersToQuery, parseFilters, PLATFORM_LABELS } from "@/lib/data/types";
 
 export const dynamic = "force-dynamic";
@@ -16,21 +15,21 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const s = await getScreen(db(), (await params).id);
+  const s = await repo.getScreen((await params).id);
   return { title: s ? `${s.app.name} · ${s.tags[0]?.name ?? "Screen"}` : "Not found" };
 }
 
 export default async function ScreenPage({ params, searchParams }: Props) {
   const [{ id }, sp] = await Promise.all([params, searchParams]);
-  const screen = await getScreen(db(), id);
+  const screen = await repo.getScreen(id);
   if (!screen) notFound();
 
   // Navigation context: the result set the user came from (or the app's own platform feed).
   const filters = parseFilters({ ...sp, platform: (sp.platform as string) ?? screen.app.platform });
   const index = Number.isInteger(Number(sp.i)) ? Number(sp.i) : null;
   const [neighbors, related] = await Promise.all([
-    index !== null ? getNeighbors(db(), filters, index) : null,
-    getRelated(db(), screen.id, 6),
+    index !== null ? repo.getNeighbors(filters, index) : null,
+    repo.getRelated(screen.id, 6),
   ]);
   const hrefAt = (target: { id: string } | null, i: number) =>
     target ? `/screen/${target.id}?${filtersToQuery(filters, { i })}` : null;

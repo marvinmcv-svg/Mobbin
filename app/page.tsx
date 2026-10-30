@@ -1,19 +1,17 @@
 import Link from "next/link";
 import { LIBRARY_NAME } from "@/lib/config";
-import { db } from "@/lib/db";
-import { getFacets, listScreens } from "@/lib/data/screens";
+import { repo } from "@/lib/repo";
 import { PLATFORM_LABELS, PLATFORMS } from "@/lib/data/types";
 
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const pool = db();
   const [latest, facets, counts] = await Promise.all([
-    listScreens(pool, { platform: "site" }, 0, 16),
-    getFacets(pool, "site"),
+    repo.listScreens({ platform: "site" }, 0, 16),
+    repo.getFacets("site"),
     Promise.all(
       PLATFORMS.map((p) =>
-        listScreens(pool, { platform: p }, 0, 1).then((r) => [p, r.total] as const),
+        repo.listScreens({ platform: p }, 0, 1).then((r) => [p, r.total] as const),
       ),
     ),
   ]);
