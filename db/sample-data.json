@@ -1,0 +1,1796 @@
+[
+ {
+  "app": {
+   "name": "Quillfox",
+   "slug": "quillfox",
+   "platform": "site",
+   "category": "AI & Chat",
+   "brand_color": "#D9480F",
+   "website_url": null,
+   "icon_path": "/samples/quillfox/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-30"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/quillfox/hero.svg",
+    "full_image_path": "/samples/quillfox/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#FBFAF7",
+     "#D9480F",
+     "#1B1A17"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "minimal",
+     "light"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Quillfox, a fictional ai & chat product. minimal, light visual style with serif headlines and a #D9480F accent.",
+    "ocr_text": "Drafts that sound like you, only sooner A writing partner trained on your own notes.",
+    "captured_at": "2026-10-30",
+    "created_offset_minutes": 0,
+    "save_count": 296
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/quillfox/features.svg",
+    "full_image_path": "/samples/quillfox/full.svg",
+    "width": 1440,
+    "height": 760,
+    "dominant_colors": [
+     "#FBFAF7",
+     "#D9480F",
+     "#1B1A17"
+    ],
+    "patterns": [
+     "features-section"
+    ],
+    "styles": [
+     "minimal",
+     "light"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "features section for Quillfox, a fictional ai & chat product. minimal, light visual style with serif headlines and a #D9480F accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-30",
+    "created_offset_minutes": 7,
+    "save_count": 349
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/quillfox/testimonials.svg",
+    "full_image_path": "/samples/quillfox/full.svg",
+    "width": 1440,
+    "height": 620,
+    "dominant_colors": [
+     "#FBFAF7",
+     "#D9480F",
+     "#1B1A17"
+    ],
+    "patterns": [
+     "social-proof"
+    ],
+    "styles": [
+     "minimal",
+     "light"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "testimonials section for Quillfox, a fictional ai & chat product. minimal, light visual style with serif headlines and a #D9480F accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-30",
+    "created_offset_minutes": 14,
+    "save_count": 2
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/quillfox/pricing.svg",
+    "full_image_path": "/samples/quillfox/full.svg",
+    "width": 1440,
+    "height": 820,
+    "dominant_colors": [
+     "#FBFAF7",
+     "#D9480F",
+     "#1B1A17"
+    ],
+    "patterns": [
+     "pricing-section"
+    ],
+    "styles": [
+     "minimal",
+     "light"
+    ],
+    "elements": [
+     "card",
+     "button"
+    ],
+    "ai_description": "pricing section for Quillfox, a fictional ai & chat product. minimal, light visual style with serif headlines and a #D9480F accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-30",
+    "created_offset_minutes": 21,
+    "save_count": 55
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/quillfox/footer.svg",
+    "full_image_path": "/samples/quillfox/full.svg",
+    "width": 1440,
+    "height": 380,
+    "dominant_colors": [
+     "#FBFAF7",
+     "#D9480F",
+     "#1B1A17"
+    ],
+    "patterns": [
+     "footer-section"
+    ],
+    "styles": [
+     "minimal",
+     "light"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "footer section for Quillfox, a fictional ai & chat product. minimal, light visual style with serif headlines and a #D9480F accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-30",
+    "created_offset_minutes": 28,
+    "save_count": 108
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Kitebase",
+   "slug": "kitebase",
+   "platform": "site",
+   "category": "Developer Tools",
+   "brand_color": "#5EEAD4",
+   "website_url": null,
+   "icon_path": "/samples/kitebase/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-29"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/kitebase/hero.svg",
+    "full_image_path": "/samples/kitebase/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#0C0F14",
+     "#5EEAD4",
+     "#E8ECF2"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "dark",
+     "grid"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Kitebase, a fictional developer tools product. dark, grid visual style with sans-serif headlines and a #5EEAD4 accent.",
+    "ocr_text": "Deploy previews for every branch Push code, get a URL, share it with anyone.",
+    "captured_at": "2026-10-29",
+    "created_offset_minutes": 1440,
+    "save_count": 296
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/kitebase/stats.svg",
+    "full_image_path": "/samples/kitebase/full.svg",
+    "width": 1440,
+    "height": 420,
+    "dominant_colors": [
+     "#0C0F14",
+     "#5EEAD4",
+     "#E8ECF2"
+    ],
+    "patterns": [
+     "stats-section"
+    ],
+    "styles": [
+     "dark",
+     "grid"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "stats section for Kitebase, a fictional developer tools product. dark, grid visual style with sans-serif headlines and a #5EEAD4 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-29",
+    "created_offset_minutes": 1447,
+    "save_count": 349
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/kitebase/how-it-works.svg",
+    "full_image_path": "/samples/kitebase/full.svg",
+    "width": 1440,
+    "height": 680,
+    "dominant_colors": [
+     "#0C0F14",
+     "#5EEAD4",
+     "#E8ECF2"
+    ],
+    "patterns": [
+     "how-it-works"
+    ],
+    "styles": [
+     "dark",
+     "grid"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "how it works section for Kitebase, a fictional developer tools product. dark, grid visual style with sans-serif headlines and a #5EEAD4 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-29",
+    "created_offset_minutes": 1454,
+    "save_count": 2
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/kitebase/pricing.svg",
+    "full_image_path": "/samples/kitebase/full.svg",
+    "width": 1440,
+    "height": 820,
+    "dominant_colors": [
+     "#0C0F14",
+     "#5EEAD4",
+     "#E8ECF2"
+    ],
+    "patterns": [
+     "pricing-section"
+    ],
+    "styles": [
+     "dark",
+     "grid"
+    ],
+    "elements": [
+     "card",
+     "button"
+    ],
+    "ai_description": "pricing section for Kitebase, a fictional developer tools product. dark, grid visual style with sans-serif headlines and a #5EEAD4 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-29",
+    "created_offset_minutes": 1461,
+    "save_count": 55
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/kitebase/cta.svg",
+    "full_image_path": "/samples/kitebase/full.svg",
+    "width": 1440,
+    "height": 480,
+    "dominant_colors": [
+     "#0C0F14",
+     "#5EEAD4",
+     "#E8ECF2"
+    ],
+    "patterns": [
+     "cta-section"
+    ],
+    "styles": [
+     "dark",
+     "grid"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "cta section for Kitebase, a fictional developer tools product. dark, grid visual style with sans-serif headlines and a #5EEAD4 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-29",
+    "created_offset_minutes": 1468,
+    "save_count": 108
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/kitebase/footer.svg",
+    "full_image_path": "/samples/kitebase/full.svg",
+    "width": 1440,
+    "height": 380,
+    "dominant_colors": [
+     "#0C0F14",
+     "#5EEAD4",
+     "#E8ECF2"
+    ],
+    "patterns": [
+     "footer-section"
+    ],
+    "styles": [
+     "dark",
+     "grid"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "footer section for Kitebase, a fictional developer tools product. dark, grid visual style with sans-serif headlines and a #5EEAD4 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-29",
+    "created_offset_minutes": 1475,
+    "save_count": 161
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Mintbridge",
+   "slug": "mintbridge",
+   "platform": "site",
+   "category": "Finance",
+   "brand_color": "#16A34A",
+   "website_url": null,
+   "icon_path": "/samples/mintbridge/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-29"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/mintbridge/hero.svg",
+    "full_image_path": "/samples/mintbridge/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#F4FBF6",
+     "#16A34A",
+     "#0E2A1C"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "light",
+     "bold"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Mintbridge, a fictional finance product. light, bold visual style with sans-serif headlines and a #16A34A accent.",
+    "ocr_text": "Money in. Worry out. Invoices, payouts and tax set-asides on autopilot.",
+    "captured_at": "2026-10-29",
+    "created_offset_minutes": 1440,
+    "save_count": 370
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/mintbridge/features.svg",
+    "full_image_path": "/samples/mintbridge/full.svg",
+    "width": 1440,
+    "height": 760,
+    "dominant_colors": [
+     "#F4FBF6",
+     "#16A34A",
+     "#0E2A1C"
+    ],
+    "patterns": [
+     "features-section"
+    ],
+    "styles": [
+     "light",
+     "bold"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "features section for Mintbridge, a fictional finance product. light, bold visual style with sans-serif headlines and a #16A34A accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-29",
+    "created_offset_minutes": 1447,
+    "save_count": 23
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/mintbridge/stats.svg",
+    "full_image_path": "/samples/mintbridge/full.svg",
+    "width": 1440,
+    "height": 420,
+    "dominant_colors": [
+     "#F4FBF6",
+     "#16A34A",
+     "#0E2A1C"
+    ],
+    "patterns": [
+     "stats-section"
+    ],
+    "styles": [
+     "light",
+     "bold"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "stats section for Mintbridge, a fictional finance product. light, bold visual style with sans-serif headlines and a #16A34A accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-29",
+    "created_offset_minutes": 1454,
+    "save_count": 76
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/mintbridge/cta.svg",
+    "full_image_path": "/samples/mintbridge/full.svg",
+    "width": 1440,
+    "height": 480,
+    "dominant_colors": [
+     "#F4FBF6",
+     "#16A34A",
+     "#0E2A1C"
+    ],
+    "patterns": [
+     "cta-section"
+    ],
+    "styles": [
+     "light",
+     "bold"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "cta section for Mintbridge, a fictional finance product. light, bold visual style with sans-serif headlines and a #16A34A accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-29",
+    "created_offset_minutes": 1461,
+    "save_count": 129
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Driftline",
+   "slug": "driftline",
+   "platform": "site",
+   "category": "Travel",
+   "brand_color": "#F97316",
+   "website_url": null,
+   "icon_path": "/samples/driftline/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-28"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/driftline/hero.svg",
+    "full_image_path": "/samples/driftline/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#FFF8F1",
+     "#F97316",
+     "#2A1A12"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "photography",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Driftline, a fictional travel product. photography, colorful visual style with serif headlines and a #F97316 accent.",
+    "ocr_text": "Slow trips, planned in minutes Rail-first itineraries across 30 countries.",
+    "captured_at": "2026-10-28",
+    "created_offset_minutes": 2880,
+    "save_count": 333
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/driftline/how-it-works.svg",
+    "full_image_path": "/samples/driftline/full.svg",
+    "width": 1440,
+    "height": 680,
+    "dominant_colors": [
+     "#FFF8F1",
+     "#F97316",
+     "#2A1A12"
+    ],
+    "patterns": [
+     "how-it-works"
+    ],
+    "styles": [
+     "photography",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "how it works section for Driftline, a fictional travel product. photography, colorful visual style with serif headlines and a #F97316 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-28",
+    "created_offset_minutes": 2887,
+    "save_count": 386
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/driftline/testimonials.svg",
+    "full_image_path": "/samples/driftline/full.svg",
+    "width": 1440,
+    "height": 620,
+    "dominant_colors": [
+     "#FFF8F1",
+     "#F97316",
+     "#2A1A12"
+    ],
+    "patterns": [
+     "social-proof"
+    ],
+    "styles": [
+     "photography",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "testimonials section for Driftline, a fictional travel product. photography, colorful visual style with serif headlines and a #F97316 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-28",
+    "created_offset_minutes": 2894,
+    "save_count": 39
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/driftline/footer.svg",
+    "full_image_path": "/samples/driftline/full.svg",
+    "width": 1440,
+    "height": 380,
+    "dominant_colors": [
+     "#FFF8F1",
+     "#F97316",
+     "#2A1A12"
+    ],
+    "patterns": [
+     "footer-section"
+    ],
+    "styles": [
+     "photography",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "footer section for Driftline, a fictional travel product. photography, colorful visual style with serif headlines and a #F97316 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-28",
+    "created_offset_minutes": 2901,
+    "save_count": 92
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Ferrous",
+   "slug": "ferrous",
+   "platform": "site",
+   "category": "Finance",
+   "brand_color": "#A855F7",
+   "website_url": null,
+   "icon_path": "/samples/ferrous/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-27"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/ferrous/hero.svg",
+    "full_image_path": "/samples/ferrous/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#09090B",
+     "#A855F7",
+     "#FAFAFA"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "dark",
+     "3d"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Ferrous, a fictional finance product. dark, 3d visual style with sans-serif headlines and a #A855F7 accent.",
+    "ocr_text": "Self-custody, minus the anxiety A hardware-backed wallet with recovery that makes sense.",
+    "captured_at": "2026-10-27",
+    "created_offset_minutes": 4320,
+    "save_count": 259
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/ferrous/features.svg",
+    "full_image_path": "/samples/ferrous/full.svg",
+    "width": 1440,
+    "height": 760,
+    "dominant_colors": [
+     "#09090B",
+     "#A855F7",
+     "#FAFAFA"
+    ],
+    "patterns": [
+     "features-section"
+    ],
+    "styles": [
+     "dark",
+     "3d"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "features section for Ferrous, a fictional finance product. dark, 3d visual style with sans-serif headlines and a #A855F7 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-27",
+    "created_offset_minutes": 4327,
+    "save_count": 312
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/ferrous/pricing.svg",
+    "full_image_path": "/samples/ferrous/full.svg",
+    "width": 1440,
+    "height": 820,
+    "dominant_colors": [
+     "#09090B",
+     "#A855F7",
+     "#FAFAFA"
+    ],
+    "patterns": [
+     "pricing-section"
+    ],
+    "styles": [
+     "dark",
+     "3d"
+    ],
+    "elements": [
+     "card",
+     "button"
+    ],
+    "ai_description": "pricing section for Ferrous, a fictional finance product. dark, 3d visual style with sans-serif headlines and a #A855F7 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-27",
+    "created_offset_minutes": 4334,
+    "save_count": 365
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/ferrous/footer.svg",
+    "full_image_path": "/samples/ferrous/full.svg",
+    "width": 1440,
+    "height": 380,
+    "dominant_colors": [
+     "#09090B",
+     "#A855F7",
+     "#FAFAFA"
+    ],
+    "patterns": [
+     "footer-section"
+    ],
+    "styles": [
+     "dark",
+     "3d"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "footer section for Ferrous, a fictional finance product. dark, 3d visual style with sans-serif headlines and a #A855F7 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-27",
+    "created_offset_minutes": 4341,
+    "save_count": 18
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Pulsewise",
+   "slug": "pulsewise",
+   "platform": "site",
+   "category": "Health & Fitness",
+   "brand_color": "#4F46E5",
+   "website_url": null,
+   "icon_path": "/samples/pulsewise/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-26"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/pulsewise/hero.svg",
+    "full_image_path": "/samples/pulsewise/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#F5F7FF",
+     "#4F46E5",
+     "#151B3A"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "light",
+     "illustration"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Pulsewise, a fictional health & fitness product. light, illustration visual style with sans-serif headlines and a #4F46E5 accent.",
+    "ocr_text": "Sleep better, one night at a time Gentle coaching from the data you already have.",
+    "captured_at": "2026-10-26",
+    "created_offset_minutes": 5760,
+    "save_count": 333
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/pulsewise/features.svg",
+    "full_image_path": "/samples/pulsewise/full.svg",
+    "width": 1440,
+    "height": 760,
+    "dominant_colors": [
+     "#F5F7FF",
+     "#4F46E5",
+     "#151B3A"
+    ],
+    "patterns": [
+     "features-section"
+    ],
+    "styles": [
+     "light",
+     "illustration"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "features section for Pulsewise, a fictional health & fitness product. light, illustration visual style with sans-serif headlines and a #4F46E5 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-26",
+    "created_offset_minutes": 5767,
+    "save_count": 386
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/pulsewise/testimonials.svg",
+    "full_image_path": "/samples/pulsewise/full.svg",
+    "width": 1440,
+    "height": 620,
+    "dominant_colors": [
+     "#F5F7FF",
+     "#4F46E5",
+     "#151B3A"
+    ],
+    "patterns": [
+     "social-proof"
+    ],
+    "styles": [
+     "light",
+     "illustration"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "testimonials section for Pulsewise, a fictional health & fitness product. light, illustration visual style with sans-serif headlines and a #4F46E5 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-26",
+    "created_offset_minutes": 5774,
+    "save_count": 39
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/pulsewise/cta.svg",
+    "full_image_path": "/samples/pulsewise/full.svg",
+    "width": 1440,
+    "height": 480,
+    "dominant_colors": [
+     "#F5F7FF",
+     "#4F46E5",
+     "#151B3A"
+    ],
+    "patterns": [
+     "cta-section"
+    ],
+    "styles": [
+     "light",
+     "illustration"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "cta section for Pulsewise, a fictional health & fitness product. light, illustration visual style with sans-serif headlines and a #4F46E5 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-26",
+    "created_offset_minutes": 5781,
+    "save_count": 92
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Tallow & Rye",
+   "slug": "tallow-and-rye",
+   "platform": "site",
+   "category": "Food & Drink",
+   "brand_color": "#E11D48",
+   "website_url": null,
+   "icon_path": "/samples/tallow-and-rye/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-25"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/tallow-and-rye/hero.svg",
+    "full_image_path": "/samples/tallow-and-rye/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#FFF6E5",
+     "#E11D48",
+     "#3B1F0E"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "colorful",
+     "illustration"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Tallow & Rye, a fictional food & drink product. colorful, illustration visual style with serif headlines and a #E11D48 accent.",
+    "ocr_text": "Bread for the whole week, delivered Baked at 4am, at your door by 8.",
+    "captured_at": "2026-10-25",
+    "created_offset_minutes": 7200,
+    "save_count": 118
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/tallow-and-rye/navigation.svg",
+    "full_image_path": "/samples/tallow-and-rye/full.svg",
+    "width": 1440,
+    "height": 520,
+    "dominant_colors": [
+     "#FFF6E5",
+     "#E11D48",
+     "#3B1F0E"
+    ],
+    "patterns": [
+     "navigation-section"
+    ],
+    "styles": [
+     "colorful",
+     "illustration"
+    ],
+    "elements": [
+     "navigation-bar",
+     "dropdown"
+    ],
+    "ai_description": "navigation section for Tallow & Rye, a fictional food & drink product. colorful, illustration visual style with serif headlines and a #E11D48 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-25",
+    "created_offset_minutes": 7207,
+    "save_count": 171
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/tallow-and-rye/pricing.svg",
+    "full_image_path": "/samples/tallow-and-rye/full.svg",
+    "width": 1440,
+    "height": 820,
+    "dominant_colors": [
+     "#FFF6E5",
+     "#E11D48",
+     "#3B1F0E"
+    ],
+    "patterns": [
+     "pricing-section"
+    ],
+    "styles": [
+     "colorful",
+     "illustration"
+    ],
+    "elements": [
+     "card",
+     "button"
+    ],
+    "ai_description": "pricing section for Tallow & Rye, a fictional food & drink product. colorful, illustration visual style with serif headlines and a #E11D48 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-25",
+    "created_offset_minutes": 7214,
+    "save_count": 224
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/tallow-and-rye/footer.svg",
+    "full_image_path": "/samples/tallow-and-rye/full.svg",
+    "width": 1440,
+    "height": 380,
+    "dominant_colors": [
+     "#FFF6E5",
+     "#E11D48",
+     "#3B1F0E"
+    ],
+    "patterns": [
+     "footer-section"
+    ],
+    "styles": [
+     "colorful",
+     "illustration"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "footer section for Tallow & Rye, a fictional food & drink product. colorful, illustration visual style with serif headlines and a #E11D48 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-25",
+    "created_offset_minutes": 7221,
+    "save_count": 277
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Orbitly",
+   "slug": "orbitly",
+   "platform": "site",
+   "category": "Productivity",
+   "brand_color": "#38BDF8",
+   "website_url": null,
+   "icon_path": "/samples/orbitly/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-24"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/orbitly/hero.svg",
+    "full_image_path": "/samples/orbitly/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#0B1026",
+     "#38BDF8",
+     "#F1F4FF"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "glass",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Orbitly, a fictional productivity product. glass, colorful visual style with sans-serif headlines and a #38BDF8 accent.",
+    "ocr_text": "Your calendar, finally on your side Auto-scheduling that protects focus time.",
+    "captured_at": "2026-10-24",
+    "created_offset_minutes": 8640,
+    "save_count": 259
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/orbitly/stats.svg",
+    "full_image_path": "/samples/orbitly/full.svg",
+    "width": 1440,
+    "height": 420,
+    "dominant_colors": [
+     "#0B1026",
+     "#38BDF8",
+     "#F1F4FF"
+    ],
+    "patterns": [
+     "stats-section"
+    ],
+    "styles": [
+     "glass",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "stats section for Orbitly, a fictional productivity product. glass, colorful visual style with sans-serif headlines and a #38BDF8 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-24",
+    "created_offset_minutes": 8647,
+    "save_count": 312
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/orbitly/features.svg",
+    "full_image_path": "/samples/orbitly/full.svg",
+    "width": 1440,
+    "height": 760,
+    "dominant_colors": [
+     "#0B1026",
+     "#38BDF8",
+     "#F1F4FF"
+    ],
+    "patterns": [
+     "features-section"
+    ],
+    "styles": [
+     "glass",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "features section for Orbitly, a fictional productivity product. glass, colorful visual style with sans-serif headlines and a #38BDF8 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-24",
+    "created_offset_minutes": 8654,
+    "save_count": 365
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/orbitly/cta.svg",
+    "full_image_path": "/samples/orbitly/full.svg",
+    "width": 1440,
+    "height": 480,
+    "dominant_colors": [
+     "#0B1026",
+     "#38BDF8",
+     "#F1F4FF"
+    ],
+    "patterns": [
+     "cta-section"
+    ],
+    "styles": [
+     "glass",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "cta section for Orbitly, a fictional productivity product. glass, colorful visual style with sans-serif headlines and a #38BDF8 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-24",
+    "created_offset_minutes": 8661,
+    "save_count": 18
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Gleam Studio",
+   "slug": "gleam-studio",
+   "platform": "site",
+   "category": "Entertainment",
+   "brand_color": "#0A0A0A",
+   "website_url": null,
+   "icon_path": "/samples/gleam-studio/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-23"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/gleam-studio/hero.svg",
+    "full_image_path": "/samples/gleam-studio/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#FFFFFF",
+     "#0A0A0A",
+     "#0A0A0A"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "minimal",
+     "black-and-white"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Gleam Studio, a fictional entertainment product. minimal, black-and-white visual style with serif headlines and a #0A0A0A accent.",
+    "ocr_text": "Motion design for patient brands Independent studio. Eleven people. One floor.",
+    "captured_at": "2026-10-23",
+    "created_offset_minutes": 10080,
+    "save_count": 44
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/gleam-studio/testimonials.svg",
+    "full_image_path": "/samples/gleam-studio/full.svg",
+    "width": 1440,
+    "height": 620,
+    "dominant_colors": [
+     "#FFFFFF",
+     "#0A0A0A",
+     "#0A0A0A"
+    ],
+    "patterns": [
+     "social-proof"
+    ],
+    "styles": [
+     "minimal",
+     "black-and-white"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "testimonials section for Gleam Studio, a fictional entertainment product. minimal, black-and-white visual style with serif headlines and a #0A0A0A accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-23",
+    "created_offset_minutes": 10087,
+    "save_count": 97
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/gleam-studio/footer.svg",
+    "full_image_path": "/samples/gleam-studio/full.svg",
+    "width": 1440,
+    "height": 380,
+    "dominant_colors": [
+     "#FFFFFF",
+     "#0A0A0A",
+     "#0A0A0A"
+    ],
+    "patterns": [
+     "footer-section"
+    ],
+    "styles": [
+     "minimal",
+     "black-and-white"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "footer section for Gleam Studio, a fictional entertainment product. minimal, black-and-white visual style with serif headlines and a #0A0A0A accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-23",
+    "created_offset_minutes": 10094,
+    "save_count": 150
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Ledgerleaf",
+   "slug": "ledgerleaf",
+   "platform": "site",
+   "category": "Finance",
+   "brand_color": "#2F6F4F",
+   "website_url": null,
+   "icon_path": "/samples/ledgerleaf/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-22"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/ledgerleaf/hero.svg",
+    "full_image_path": "/samples/ledgerleaf/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#FAFAF5",
+     "#2F6F4F",
+     "#1F2421"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "minimal",
+     "light"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Ledgerleaf, a fictional finance product. minimal, light visual style with serif headlines and a #2F6F4F accent.",
+    "ocr_text": "Bookkeeping for people who hate it Snap receipts. We do the rest.",
+    "captured_at": "2026-10-22",
+    "created_offset_minutes": 11520,
+    "save_count": 370
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/ledgerleaf/how-it-works.svg",
+    "full_image_path": "/samples/ledgerleaf/full.svg",
+    "width": 1440,
+    "height": 680,
+    "dominant_colors": [
+     "#FAFAF5",
+     "#2F6F4F",
+     "#1F2421"
+    ],
+    "patterns": [
+     "how-it-works"
+    ],
+    "styles": [
+     "minimal",
+     "light"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "how it works section for Ledgerleaf, a fictional finance product. minimal, light visual style with serif headlines and a #2F6F4F accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-22",
+    "created_offset_minutes": 11527,
+    "save_count": 23
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/ledgerleaf/pricing.svg",
+    "full_image_path": "/samples/ledgerleaf/full.svg",
+    "width": 1440,
+    "height": 820,
+    "dominant_colors": [
+     "#FAFAF5",
+     "#2F6F4F",
+     "#1F2421"
+    ],
+    "patterns": [
+     "pricing-section"
+    ],
+    "styles": [
+     "minimal",
+     "light"
+    ],
+    "elements": [
+     "card",
+     "button"
+    ],
+    "ai_description": "pricing section for Ledgerleaf, a fictional finance product. minimal, light visual style with serif headlines and a #2F6F4F accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-22",
+    "created_offset_minutes": 11534,
+    "save_count": 76
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Sorrel",
+   "slug": "sorrel",
+   "platform": "site",
+   "category": "Shopping",
+   "brand_color": "#DB2777",
+   "website_url": null,
+   "icon_path": "/samples/sorrel/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-21"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/sorrel/hero.svg",
+    "full_image_path": "/samples/sorrel/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#FFF1F2",
+     "#DB2777",
+     "#2B0A12"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "bold",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Sorrel, a fictional shopping product. bold, colorful visual style with sans-serif headlines and a #DB2777 accent.",
+    "ocr_text": "Refill, don't rebuy Home staples in returnable glass.",
+    "captured_at": "2026-10-21",
+    "created_offset_minutes": 12960,
+    "save_count": 222
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/sorrel/features.svg",
+    "full_image_path": "/samples/sorrel/full.svg",
+    "width": 1440,
+    "height": 760,
+    "dominant_colors": [
+     "#FFF1F2",
+     "#DB2777",
+     "#2B0A12"
+    ],
+    "patterns": [
+     "features-section"
+    ],
+    "styles": [
+     "bold",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "features section for Sorrel, a fictional shopping product. bold, colorful visual style with sans-serif headlines and a #DB2777 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-21",
+    "created_offset_minutes": 12967,
+    "save_count": 275
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/sorrel/cta.svg",
+    "full_image_path": "/samples/sorrel/full.svg",
+    "width": 1440,
+    "height": 480,
+    "dominant_colors": [
+     "#FFF1F2",
+     "#DB2777",
+     "#2B0A12"
+    ],
+    "patterns": [
+     "cta-section"
+    ],
+    "styles": [
+     "bold",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "cta section for Sorrel, a fictional shopping product. bold, colorful visual style with sans-serif headlines and a #DB2777 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-21",
+    "created_offset_minutes": 12974,
+    "save_count": 328
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/sorrel/footer.svg",
+    "full_image_path": "/samples/sorrel/full.svg",
+    "width": 1440,
+    "height": 380,
+    "dominant_colors": [
+     "#FFF1F2",
+     "#DB2777",
+     "#2B0A12"
+    ],
+    "patterns": [
+     "footer-section"
+    ],
+    "styles": [
+     "bold",
+     "colorful"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "footer section for Sorrel, a fictional shopping product. bold, colorful visual style with sans-serif headlines and a #DB2777 accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-21",
+    "created_offset_minutes": 12981,
+    "save_count": 381
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Halyard",
+   "slug": "halyard",
+   "platform": "site",
+   "category": "Education",
+   "brand_color": "#2563EB",
+   "website_url": null,
+   "icon_path": "/samples/halyard/icon.svg",
+   "version": null,
+   "captured_at": "2026-10-19"
+  },
+  "screens": [
+   {
+    "kind": "section",
+    "image_path": "/samples/halyard/hero.svg",
+    "full_image_path": "/samples/halyard/full.svg",
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#F7FAFC",
+     "#2563EB",
+     "#102A43"
+    ],
+    "patterns": [
+     "hero-section"
+    ],
+    "styles": [
+     "light",
+     "grid"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "hero section for Halyard, a fictional education product. light, grid visual style with sans-serif headlines and a #2563EB accent.",
+    "ocr_text": "Learn to sail before you get wet Interactive lessons, then a real boat.",
+    "captured_at": "2026-10-19",
+    "created_offset_minutes": 15840,
+    "save_count": 259
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/halyard/stats.svg",
+    "full_image_path": "/samples/halyard/full.svg",
+    "width": 1440,
+    "height": 420,
+    "dominant_colors": [
+     "#F7FAFC",
+     "#2563EB",
+     "#102A43"
+    ],
+    "patterns": [
+     "stats-section"
+    ],
+    "styles": [
+     "light",
+     "grid"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "stats section for Halyard, a fictional education product. light, grid visual style with sans-serif headlines and a #2563EB accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-19",
+    "created_offset_minutes": 15847,
+    "save_count": 312
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/halyard/testimonials.svg",
+    "full_image_path": "/samples/halyard/full.svg",
+    "width": 1440,
+    "height": 620,
+    "dominant_colors": [
+     "#F7FAFC",
+     "#2563EB",
+     "#102A43"
+    ],
+    "patterns": [
+     "social-proof"
+    ],
+    "styles": [
+     "light",
+     "grid"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "testimonials section for Halyard, a fictional education product. light, grid visual style with sans-serif headlines and a #2563EB accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-19",
+    "created_offset_minutes": 15854,
+    "save_count": 365
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/halyard/pricing.svg",
+    "full_image_path": "/samples/halyard/full.svg",
+    "width": 1440,
+    "height": 820,
+    "dominant_colors": [
+     "#F7FAFC",
+     "#2563EB",
+     "#102A43"
+    ],
+    "patterns": [
+     "pricing-section"
+    ],
+    "styles": [
+     "light",
+     "grid"
+    ],
+    "elements": [
+     "card",
+     "button"
+    ],
+    "ai_description": "pricing section for Halyard, a fictional education product. light, grid visual style with sans-serif headlines and a #2563EB accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-19",
+    "created_offset_minutes": 15861,
+    "save_count": 18
+   },
+   {
+    "kind": "section",
+    "image_path": "/samples/halyard/footer.svg",
+    "full_image_path": "/samples/halyard/full.svg",
+    "width": 1440,
+    "height": 380,
+    "dominant_colors": [
+     "#F7FAFC",
+     "#2563EB",
+     "#102A43"
+    ],
+    "patterns": [
+     "footer-section"
+    ],
+    "styles": [
+     "light",
+     "grid"
+    ],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "footer section for Halyard, a fictional education product. light, grid visual style with sans-serif headlines and a #2563EB accent.",
+    "ocr_text": null,
+    "captured_at": "2026-10-19",
+    "created_offset_minutes": 15868,
+    "save_count": 71
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Brightloop",
+   "slug": "brightloop",
+   "platform": "ios",
+   "category": "Health & Fitness",
+   "brand_color": "#F59E0B",
+   "icon_path": "/samples/brightloop/icon.svg",
+   "version": "3.2.0",
+   "captured_at": "2026-10-28"
+  },
+  "flow": {
+   "name": "Onboarding",
+   "description": "Onboarding as captured on 2026-10-28."
+  },
+  "screens": [
+   {
+    "kind": "screen",
+    "image_path": "/samples/brightloop/1-onboarding.svg",
+    "full_image_path": null,
+    "width": 390,
+    "height": 844,
+    "dominant_colors": [
+     "#FFFFFF",
+     "#F59E0B"
+    ],
+    "patterns": [
+     "onboarding"
+    ],
+    "styles": [],
+    "elements": [
+     "button",
+     "progress-bar"
+    ],
+    "ai_description": "Build a streak: onboarding screen in Brightloop, a fictional health & fitness ios app.",
+    "ocr_text": "Build a streak",
+    "flow_position": 1,
+    "flow_caption": "Build a streak",
+    "captured_at": "2026-10-28",
+    "created_offset_minutes": 2880,
+    "save_count": 290
+   },
+   {
+    "kind": "screen",
+    "image_path": "/samples/brightloop/2-onboarding.svg",
+    "full_image_path": null,
+    "width": 390,
+    "height": 844,
+    "dominant_colors": [
+     "#FFFFFF",
+     "#F59E0B"
+    ],
+    "patterns": [
+     "onboarding"
+    ],
+    "styles": [],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "Set a reminder: onboarding screen in Brightloop, a fictional health & fitness ios app.",
+    "ocr_text": "Set a reminder",
+    "flow_position": 2,
+    "flow_caption": "Set a reminder",
+    "captured_at": "2026-10-28",
+    "created_offset_minutes": 2885,
+    "save_count": 31
+   },
+   {
+    "kind": "screen",
+    "image_path": "/samples/brightloop/3-paywall-upgrade.svg",
+    "full_image_path": null,
+    "width": 390,
+    "height": 844,
+    "dominant_colors": [
+     "#FFFFFF",
+     "#F59E0B"
+    ],
+    "patterns": [
+     "paywall-upgrade"
+    ],
+    "styles": [],
+    "elements": [
+     "button",
+     "card",
+     "badge"
+    ],
+    "ai_description": "Go unlimited: paywall upgrade screen in Brightloop, a fictional health & fitness ios app.",
+    "ocr_text": "Go unlimited",
+    "flow_position": 3,
+    "flow_caption": "Go unlimited",
+    "captured_at": "2026-10-28",
+    "created_offset_minutes": 2890,
+    "save_count": 72
+   },
+   {
+    "kind": "screen",
+    "image_path": "/samples/brightloop/4-home-feed.svg",
+    "full_image_path": null,
+    "width": 390,
+    "height": 844,
+    "dominant_colors": [
+     "#FFFFFF",
+     "#F59E0B"
+    ],
+    "patterns": [
+     "home-feed"
+    ],
+    "styles": [],
+    "elements": [
+     "tab-bar",
+     "card",
+     "list"
+    ],
+    "ai_description": "Good morning: home feed screen in Brightloop, a fictional health & fitness ios app.",
+    "ocr_text": "Good morning",
+    "flow_position": 4,
+    "flow_caption": "Good morning",
+    "captured_at": "2026-10-28",
+    "created_offset_minutes": 2895,
+    "save_count": 113
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Parcelly",
+   "slug": "parcelly",
+   "platform": "android",
+   "category": "Utilities",
+   "brand_color": "#0EA5E9",
+   "icon_path": "/samples/parcelly/icon.svg",
+   "version": "3.2.0",
+   "captured_at": "2026-10-26"
+  },
+  "flow": null,
+  "screens": [
+   {
+    "kind": "screen",
+    "image_path": "/samples/parcelly/1-home-feed.svg",
+    "full_image_path": null,
+    "width": 390,
+    "height": 844,
+    "dominant_colors": [
+     "#F8FAFC",
+     "#0EA5E9"
+    ],
+    "patterns": [
+     "home-feed"
+    ],
+    "styles": [],
+    "elements": [
+     "tab-bar",
+     "list"
+    ],
+    "ai_description": "Deliveries: home feed screen in Parcelly, a fictional utilities android app.",
+    "ocr_text": "Deliveries",
+    "flow_position": null,
+    "flow_caption": null,
+    "captured_at": "2026-10-26",
+    "created_offset_minutes": 5760,
+    "save_count": 232
+   },
+   {
+    "kind": "screen",
+    "image_path": "/samples/parcelly/2-settings.svg",
+    "full_image_path": null,
+    "width": 390,
+    "height": 844,
+    "dominant_colors": [
+     "#F8FAFC",
+     "#0EA5E9"
+    ],
+    "patterns": [
+     "settings"
+    ],
+    "styles": [],
+    "elements": [
+     "toggle",
+     "list"
+    ],
+    "ai_description": "Settings: settings screen in Parcelly, a fictional utilities android app.",
+    "ocr_text": "Settings",
+    "flow_position": null,
+    "flow_caption": null,
+    "captured_at": "2026-10-26",
+    "created_offset_minutes": 5765,
+    "save_count": 273
+   }
+  ]
+ },
+ {
+  "app": {
+   "name": "Cobalt Desk",
+   "slug": "cobalt-desk",
+   "platform": "web",
+   "category": "Productivity",
+   "brand_color": "#2563EB",
+   "icon_path": "/samples/cobalt-desk/icon.svg",
+   "version": "3.2.0",
+   "captured_at": "2026-10-27"
+  },
+  "flow": null,
+  "screens": [
+   {
+    "kind": "screen",
+    "image_path": "/samples/cobalt-desk/1-dashboard.svg",
+    "full_image_path": null,
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#FFFFFF",
+     "#2563EB"
+    ],
+    "patterns": [
+     "dashboard"
+    ],
+    "styles": [],
+    "elements": [
+     "chart",
+     "card",
+     "navigation-bar"
+    ],
+    "ai_description": "Overview: dashboard screen in Cobalt Desk, a fictional productivity web app.",
+    "ocr_text": "Overview",
+    "flow_position": null,
+    "flow_caption": null,
+    "captured_at": "2026-10-27",
+    "created_offset_minutes": 4320,
+    "save_count": 19
+   },
+   {
+    "kind": "screen",
+    "image_path": "/samples/cobalt-desk/2-empty-state.svg",
+    "full_image_path": null,
+    "width": 1440,
+    "height": 900,
+    "dominant_colors": [
+     "#FFFFFF",
+     "#2563EB"
+    ],
+    "patterns": [
+     "empty-state"
+    ],
+    "styles": [],
+    "elements": [
+     "button"
+    ],
+    "ai_description": "Projects: empty state screen in Cobalt Desk, a fictional productivity web app.",
+    "ocr_text": "Projects",
+    "flow_position": null,
+    "flow_caption": null,
+    "captured_at": "2026-10-27",
+    "created_offset_minutes": 4325,
+    "save_count": 60
+   }
+  ]
+ }
+]
