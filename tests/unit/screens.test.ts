@@ -108,7 +108,12 @@ describe("listScreens", () => {
 describe("clips", () => {
   it("attaches clips to cards and filters to motion-only", async () => {
     const page = await listScreens(pool, f({ has: "video" }), 0, 100);
-    expect(page.items.map((s) => s.app.slug).sort()).toEqual(["driftline", "ferrous", "kitebase", "orbitly"]);
+    expect(page.items.map((s) => s.app.slug).sort()).toEqual([
+      "driftline",
+      "ferrous",
+      "kitebase",
+      "orbitly",
+    ]);
     expect(page.items.every((s) => s.video?.endsWith("/hero.mp4"))).toBe(true);
     const still = await listScreens(pool, f({ app: "quillfox" }));
     expect(still.items.every((s) => s.video === null)).toBe(true);

@@ -64,5 +64,7 @@ test("motion clips play only while in view and filter to motion-only", async ({ 
   await expect(page.locator("a[data-card]")).toHaveCount(4);
   const clip = page.locator("a[data-card] video").first();
   await expect(clip).not.toHaveAttribute("autoplay", /.*/);
-  await expect.poll(() => clip.evaluate((v: HTMLVideoElement) => !v.paused && v.muted && v.loop)).toBe(true);
+  await expect
+    .poll(() => clip.evaluate((v: HTMLVideoElement) => !v.paused && v.muted && v.loop))
+    .toBe(true);
 });
