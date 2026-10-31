@@ -18,6 +18,7 @@ const cases = [
   { platform: "web", element: "chart" },
   { q: "kiteb" },
   { q: "pricing" },
+  { has: "video" },
 ];
 
 describe("memory store parity with Postgres", () => {

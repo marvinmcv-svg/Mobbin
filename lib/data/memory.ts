@@ -37,6 +37,7 @@ interface SampleScreen {
   captured_at: string;
   created_offset_minutes: number;
   save_count: number;
+  video_path?: string | null;
 }
 interface SampleProduct {
   app: {
@@ -119,6 +120,7 @@ for (const p of products) {
         color: s.dominant_colors[0] ?? null,
         createdAt: new Date(createdMs).toISOString(),
         saveCount: s.save_count,
+        video: s.video_path ?? null,
         app,
         tags,
         fullImagePath: s.full_image_path,
@@ -167,6 +169,7 @@ const toCard = ({ detail: d }: Row): ScreenCard => ({
   color: d.color,
   createdAt: d.createdAt,
   saveCount: d.saveCount,
+  video: d.video,
   app: d.app,
   tags: d.tags,
 });
@@ -193,6 +196,7 @@ function filtered(f: Filters) {
       (!f.element || hasTag(r, "element", f.element)) &&
       (!f.category || r.category.slug === f.category) &&
       (!f.app || r.detail.app.slug === f.app) &&
+      (f.has !== "video" || !!r.detail.video) &&
       (!f.q || score(r, f.q) > 0),
   );
   const byLatest = (a: Row, b: Row) =>

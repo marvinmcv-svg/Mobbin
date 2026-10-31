@@ -18,7 +18,7 @@ npm run db:seed          # idempotent: taxonomy + sample products
 npm run build && npm start   # http://localhost:3000
 ```
 
-Regenerate sample imagery with `npm run samples` (then `npm run db:seed`).
+Regenerate sample imagery with `npm run samples && npm run clips` (then `npm run db:seed`). `samples` wipes `public/samples`, so always run `clips` after it.
 
 ## Deploying
 

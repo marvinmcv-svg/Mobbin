@@ -46,3 +46,9 @@ over `db/sample-data.json` (`lib/data/memory.ts`). This lets the Vercel deploy w
 a hosted database exists. Parity tests (`tests/unit/memory.test.ts`) keep both stores
 returning the same results. In this mode, takedown requests are only logged, not stored, so
 attach a database before you invite anyone.
+
+**2026-10-31 · Phase A re-run with REA.** REA 6.7.0 was installed and attached over CDP. Its
+Evidence (`docs/reverse-engineering/10-rea-findings.md`) corrected the first pass: the sites
+feed shows muted looping video previews that script plays (no `autoplay` attribute). We now
+ship clips via the existing `clips` table, a `ClipPlayer` that plays at ≥ 60 % visibility and
+never under reduced motion, a Clip tab in the viewer, and a `has=video` ("Motion only") filter.

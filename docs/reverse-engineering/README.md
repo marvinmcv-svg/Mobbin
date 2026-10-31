@@ -6,10 +6,9 @@ DOM structure, computed layout, CSS transitions, URL patterns and response metad
 (content types and hosts). We did not log in, did not call private APIs, did not download
 image assets, and did not keep screenshots in this repo.
 
-REA (`morluto/rea`) was the intended tool. Installing it in this session was blocked by the
-sandbox permission policy, so the same kind of CDP-based passive observation was done with
-the pre-installed Playwright. Re-running with REA's `inspect_web_page` /
-`observe_web_session` should confirm these notes; nothing here depends on REA-only data.
+Files 01–09 come from a first pass done with Playwright. REA (`rea-agents@6.7.0`) was then
+run against the same pages: see **`10-rea-findings.md`** for its Evidence IDs and the
+corrections it made. Where 01–09 and 10 disagree, file 10 wins.
 
 Labels: **Seen** = directly observed. **Inferred** = reasoned from evidence. **Unknown** = not
 determinable without breaking the ground rules.
@@ -22,4 +21,4 @@ behind login, so its exact behavior is **Unknown**. The closest public page is
 Files:
 - `01-home.md` · `02-browse-grid.md` · `03-filters-search.md` · `04-screen-viewer.md`
 - `05-flow-viewer.md` · `06-clips.md` · `07-collections.md` · `08-gating.md`
-- `09-navigation-states.md` · `00-summary.md`
+- `09-navigation-states.md` · `10-rea-findings.md` · `00-summary.md`

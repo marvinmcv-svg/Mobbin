@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { filtersToQuery, type Filters, type ScreenCard as Card, type Tag } from "@/lib/data/types";
+import { ClipPlayer } from "./ClipPlayer";
 import { CopyButton, SaveButton } from "./ItemActions";
 
 const TAG_PARAM: Record<Tag["kind"], string> = {
@@ -54,29 +55,42 @@ export function ScreenCard({
           )}
           style={{ aspectRatio: `1 / ${ratio}`, backgroundColor: item.color ?? undefined }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element -- static captures; responsive variants arrive with the ingestion pipeline */}
-          <img
-            ref={img}
-            src={item.imagePath}
-            alt={`${item.app.name} — ${tags
-              .map((t) => t.name)
-              .slice(0, 2)
-              .join(", ")}`}
-            width={item.width}
-            height={item.height}
-            loading={index < 4 ? "eager" : "lazy"}
-            decoding="async"
-            onLoad={() => setLoaded(true)}
-            className={clsx(
-              "absolute inset-x-0 top-0 h-auto w-full transition-opacity duration-300 ease-out-soft",
-              loaded ? "opacity-100" : "opacity-0",
-            )}
-          />
+          {item.video ? (
+            <ClipPlayer
+              src={item.video}
+              poster={item.imagePath}
+              className="absolute inset-x-0 top-0 h-auto w-full"
+            />
+          ) : (
+            // eslint-disable-next-line @next/next/no-img-element -- static captures; responsive variants arrive with the ingestion pipeline
+            <img
+              ref={img}
+              src={item.imagePath}
+              alt={`${item.app.name} — ${tags
+                .map((t) => t.name)
+                .slice(0, 2)
+                .join(", ")}`}
+              width={item.width}
+              height={item.height}
+              loading={index < 4 ? "eager" : "lazy"}
+              decoding="async"
+              onLoad={() => setLoaded(true)}
+              className={clsx(
+                "absolute inset-x-0 top-0 h-auto w-full transition-opacity duration-300 ease-out-soft",
+                loaded ? "opacity-100" : "opacity-0",
+              )}
+            />
+          )}
           <span className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/45 to-transparent opacity-0 transition-opacity duration-200 group-hover/card:opacity-100 group-focus-within/card:opacity-100" />
         </Link>
         <span className="pointer-events-none absolute top-2 left-2 rounded-[4px] bg-paper/85 px-1.5 py-0.5 font-mono text-[10px] text-ink-soft opacity-0 backdrop-blur transition-opacity duration-200 group-hover/card:opacity-100">
           {catalogueNo(index)}
         </span>
+        {item.video && (
+          <span className="pointer-events-none absolute top-2 right-2 rounded-[4px] bg-ink/80 px-1.5 py-0.5 font-mono text-[10px] text-paper">
+            ▶ Motion
+          </span>
+        )}
         <div className="absolute right-3 bottom-3 flex gap-2 opacity-0 transition-all duration-200 ease-out-soft group-hover/card:translate-y-0 group-hover/card:opacity-100 group-focus-within/card:opacity-100 sm:translate-y-1">
           <SaveButton id={item.id} />
           <CopyButton src={item.imagePath} />

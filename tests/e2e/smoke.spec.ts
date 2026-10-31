@@ -56,3 +56,13 @@ test("flow player steps and report form submits", async ({ page }) => {
   await page.getByRole("button", { name: "Send request" }).click();
   await expect(page.getByText("your request is in the queue")).toBeVisible();
 });
+
+test("motion clips play only while in view and filter to motion-only", async ({ page }) => {
+  await page.goto("/browse?platform=site");
+  await page.getByRole("button", { name: "▶ Motion only" }).click();
+  await expect(page).toHaveURL(/has=video/);
+  await expect(page.locator("a[data-card]")).toHaveCount(4);
+  const clip = page.locator("a[data-card] video").first();
+  await expect(clip).not.toHaveAttribute("autoplay", /.*/);
+  await expect.poll(() => clip.evaluate((v: HTMLVideoElement) => !v.paused && v.muted && v.loop)).toBe(true);
+});

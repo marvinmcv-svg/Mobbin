@@ -14,6 +14,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/quillfox/hero.svg",
     "full_image_path": "/samples/quillfox/full.svg",
     "width": 1440,
@@ -41,6 +42,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/quillfox/features.svg",
     "full_image_path": "/samples/quillfox/full.svg",
     "width": 1440,
@@ -68,6 +70,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/quillfox/testimonials.svg",
     "full_image_path": "/samples/quillfox/full.svg",
     "width": 1440,
@@ -95,6 +98,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/quillfox/pricing.svg",
     "full_image_path": "/samples/quillfox/full.svg",
     "width": 1440,
@@ -123,6 +127,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/quillfox/footer.svg",
     "full_image_path": "/samples/quillfox/full.svg",
     "width": 1440,
@@ -165,6 +170,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": "/samples/kitebase/hero.mp4",
     "image_path": "/samples/kitebase/hero.svg",
     "full_image_path": "/samples/kitebase/full.svg",
     "width": 1440,
@@ -179,7 +185,8 @@
     ],
     "styles": [
      "dark",
-     "grid"
+     "grid",
+     "motion"
     ],
     "elements": [
      "button"
@@ -192,6 +199,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/kitebase/stats.svg",
     "full_image_path": "/samples/kitebase/full.svg",
     "width": 1440,
@@ -219,6 +227,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/kitebase/how-it-works.svg",
     "full_image_path": "/samples/kitebase/full.svg",
     "width": 1440,
@@ -246,6 +255,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/kitebase/pricing.svg",
     "full_image_path": "/samples/kitebase/full.svg",
     "width": 1440,
@@ -274,6 +284,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/kitebase/cta.svg",
     "full_image_path": "/samples/kitebase/full.svg",
     "width": 1440,
@@ -301,6 +312,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/kitebase/footer.svg",
     "full_image_path": "/samples/kitebase/full.svg",
     "width": 1440,
@@ -343,6 +355,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/mintbridge/hero.svg",
     "full_image_path": "/samples/mintbridge/full.svg",
     "width": 1440,
@@ -370,6 +383,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/mintbridge/features.svg",
     "full_image_path": "/samples/mintbridge/full.svg",
     "width": 1440,
@@ -397,6 +411,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/mintbridge/stats.svg",
     "full_image_path": "/samples/mintbridge/full.svg",
     "width": 1440,
@@ -424,6 +439,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/mintbridge/cta.svg",
     "full_image_path": "/samples/mintbridge/full.svg",
     "width": 1440,
@@ -466,6 +482,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": "/samples/driftline/hero.mp4",
     "image_path": "/samples/driftline/hero.svg",
     "full_image_path": "/samples/driftline/full.svg",
     "width": 1440,
@@ -480,7 +497,8 @@
     ],
     "styles": [
      "photography",
-     "colorful"
+     "colorful",
+     "motion"
     ],
     "elements": [
      "button"
@@ -493,6 +511,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/driftline/how-it-works.svg",
     "full_image_path": "/samples/driftline/full.svg",
     "width": 1440,
@@ -520,6 +539,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/driftline/testimonials.svg",
     "full_image_path": "/samples/driftline/full.svg",
     "width": 1440,
@@ -547,6 +567,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/driftline/footer.svg",
     "full_image_path": "/samples/driftline/full.svg",
     "width": 1440,
@@ -589,6 +610,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": "/samples/ferrous/hero.mp4",
     "image_path": "/samples/ferrous/hero.svg",
     "full_image_path": "/samples/ferrous/full.svg",
     "width": 1440,
@@ -603,7 +625,8 @@
     ],
     "styles": [
      "dark",
-     "3d"
+     "3d",
+     "motion"
     ],
     "elements": [
      "button"
@@ -616,6 +639,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/ferrous/features.svg",
     "full_image_path": "/samples/ferrous/full.svg",
     "width": 1440,
@@ -643,6 +667,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/ferrous/pricing.svg",
     "full_image_path": "/samples/ferrous/full.svg",
     "width": 1440,
@@ -671,6 +696,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/ferrous/footer.svg",
     "full_image_path": "/samples/ferrous/full.svg",
     "width": 1440,
@@ -713,6 +739,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/pulsewise/hero.svg",
     "full_image_path": "/samples/pulsewise/full.svg",
     "width": 1440,
@@ -740,6 +767,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/pulsewise/features.svg",
     "full_image_path": "/samples/pulsewise/full.svg",
     "width": 1440,
@@ -767,6 +795,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/pulsewise/testimonials.svg",
     "full_image_path": "/samples/pulsewise/full.svg",
     "width": 1440,
@@ -794,6 +823,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/pulsewise/cta.svg",
     "full_image_path": "/samples/pulsewise/full.svg",
     "width": 1440,
@@ -836,6 +866,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/tallow-and-rye/hero.svg",
     "full_image_path": "/samples/tallow-and-rye/full.svg",
     "width": 1440,
@@ -863,6 +894,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/tallow-and-rye/navigation.svg",
     "full_image_path": "/samples/tallow-and-rye/full.svg",
     "width": 1440,
@@ -891,6 +923,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/tallow-and-rye/pricing.svg",
     "full_image_path": "/samples/tallow-and-rye/full.svg",
     "width": 1440,
@@ -919,6 +952,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/tallow-and-rye/footer.svg",
     "full_image_path": "/samples/tallow-and-rye/full.svg",
     "width": 1440,
@@ -961,6 +995,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": "/samples/orbitly/hero.mp4",
     "image_path": "/samples/orbitly/hero.svg",
     "full_image_path": "/samples/orbitly/full.svg",
     "width": 1440,
@@ -975,7 +1010,8 @@
     ],
     "styles": [
      "glass",
-     "colorful"
+     "colorful",
+     "motion"
     ],
     "elements": [
      "button"
@@ -988,6 +1024,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/orbitly/stats.svg",
     "full_image_path": "/samples/orbitly/full.svg",
     "width": 1440,
@@ -1015,6 +1052,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/orbitly/features.svg",
     "full_image_path": "/samples/orbitly/full.svg",
     "width": 1440,
@@ -1042,6 +1080,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/orbitly/cta.svg",
     "full_image_path": "/samples/orbitly/full.svg",
     "width": 1440,
@@ -1084,6 +1123,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/gleam-studio/hero.svg",
     "full_image_path": "/samples/gleam-studio/full.svg",
     "width": 1440,
@@ -1111,6 +1151,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/gleam-studio/testimonials.svg",
     "full_image_path": "/samples/gleam-studio/full.svg",
     "width": 1440,
@@ -1138,6 +1179,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/gleam-studio/footer.svg",
     "full_image_path": "/samples/gleam-studio/full.svg",
     "width": 1440,
@@ -1180,6 +1222,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/ledgerleaf/hero.svg",
     "full_image_path": "/samples/ledgerleaf/full.svg",
     "width": 1440,
@@ -1207,6 +1250,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/ledgerleaf/how-it-works.svg",
     "full_image_path": "/samples/ledgerleaf/full.svg",
     "width": 1440,
@@ -1234,6 +1278,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/ledgerleaf/pricing.svg",
     "full_image_path": "/samples/ledgerleaf/full.svg",
     "width": 1440,
@@ -1277,6 +1322,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/sorrel/hero.svg",
     "full_image_path": "/samples/sorrel/full.svg",
     "width": 1440,
@@ -1304,6 +1350,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/sorrel/features.svg",
     "full_image_path": "/samples/sorrel/full.svg",
     "width": 1440,
@@ -1331,6 +1378,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/sorrel/cta.svg",
     "full_image_path": "/samples/sorrel/full.svg",
     "width": 1440,
@@ -1358,6 +1406,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/sorrel/footer.svg",
     "full_image_path": "/samples/sorrel/full.svg",
     "width": 1440,
@@ -1400,6 +1449,7 @@
   "screens": [
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/halyard/hero.svg",
     "full_image_path": "/samples/halyard/full.svg",
     "width": 1440,
@@ -1427,6 +1477,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/halyard/stats.svg",
     "full_image_path": "/samples/halyard/full.svg",
     "width": 1440,
@@ -1454,6 +1505,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/halyard/testimonials.svg",
     "full_image_path": "/samples/halyard/full.svg",
     "width": 1440,
@@ -1481,6 +1533,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/halyard/pricing.svg",
     "full_image_path": "/samples/halyard/full.svg",
     "width": 1440,
@@ -1509,6 +1562,7 @@
    },
    {
     "kind": "section",
+    "video_path": null,
     "image_path": "/samples/halyard/footer.svg",
     "full_image_path": "/samples/halyard/full.svg",
     "width": 1440,

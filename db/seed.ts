@@ -16,6 +16,7 @@ export { APP_PATTERNS, CATEGORIES, SITE_SECTIONS, STYLES, UI_ELEMENTS };
 
 interface SampleScreen {
   kind: "screen" | "section";
+  video_path?: string | null;
   image_path: string;
   full_image_path: string | null;
   width: number;
@@ -143,6 +144,11 @@ export async function seedSamples(c: PoolClient, products: SampleProduct[]) {
         await c.query(
           "insert into screen_ui_elements select $1, id from ui_elements where slug = $2",
           [screen!.id, slug],
+        );
+      if (s.video_path)
+        await c.query(
+          "insert into clips (app_id, screen_id, video_path, poster_path, duration_ms) values ($1, $2, $3, $4, 6000)",
+          [app!.id, screen!.id, s.video_path, s.image_path],
         );
       await c.query("select refresh_screen_tsv($1)", [screen!.id]);
     }

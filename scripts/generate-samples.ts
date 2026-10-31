@@ -567,6 +567,9 @@ function webAppScreen(a: AppBrand, s: AppBrand["screens"][number]) {
 
 /* ---------- catalogue of fictional products ---------- */
 
+/** Brands whose hero capture also ships a looping scroll clip. */
+export const MOTION_BRANDS = new Set(["kitebase", "orbitly", "ferrous", "driftline"]);
+
 const sites: SiteBrand[] = [
   {
     name: "Quillfox",
@@ -901,15 +904,18 @@ function main() {
       screens: built.map((s, i) => {
         const file = `${s.t}.svg`;
         fs.writeFileSync(path.join(dir, file), svg(W, s.h, s.body));
+        // Motion brands get a scroll-through clip of the full page (encoded by generate-clips.ts).
+        const clip = s.t === "hero" && MOTION_BRANDS.has(b.slug);
         return {
           kind: "section",
+          video_path: clip ? `/samples/${b.slug}/hero.mp4` : null,
           image_path: `/samples/${b.slug}/${file}`,
           full_image_path: `/samples/${b.slug}/full.svg`,
           width: W,
           height: s.h,
           dominant_colors: [b.palette.bg, b.palette.accent, b.palette.fg],
           patterns: [sectionToPattern[s.t]],
-          styles: b.styles,
+          styles: clip ? [...b.styles, "motion"] : b.styles,
           elements:
             s.t === "pricing"
               ? ["card", "button"]

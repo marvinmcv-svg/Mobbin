@@ -8,7 +8,7 @@
 2. Platform switch: iOS · Android · Web app · **Sites**.
 3. Facets: for sites → section type, style, category; for apps → pattern, UI element, category, flow. Facets combine and live in the URL.
 4. Grid: 2 columns ≥ 900 px, 1 column below; 24 px gaps (12 px on phones); natural-height section images; 16:10 frames for web-app screens; phone frames for mobile.
-5. Card: image, hover affordances (open, save, copy), scrollable tag chips, app identity row.
+5. Card: image **or muted looping video clip that plays while in view** (REA #2–5), hover affordances (open, save, copy), scrollable tag chips, app identity row.
 6. Viewer: dedicated URL, crop/full toggle, save/copy, metadata, related, next/prev in the current result set.
 7. Collections with save/copy everywhere, optional public share link.
 8. Gating by configuration; anonymous preview + sign-up wall.

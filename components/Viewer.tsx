@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { ScreenDetail } from "@/lib/data/types";
+import { ClipPlayer } from "./ClipPlayer";
 import { CopyButton, SaveButton } from "./ItemActions";
 import { useSaved } from "@/lib/saved";
 import { toast } from "./Toaster";
@@ -22,6 +23,30 @@ export function Viewer({ screen, prevHref, nextHref, nextImage, backHref }: Prop
   const router = useRouter();
   const { toggle } = useSaved();
   const [full, setFull] = useState(false);
+  const [still, setStill] = useState(!screen.video);
+  const tabs = [
+    ...(screen.video ? [{ label: "Clip", selected: !still, select: () => setStill(false) }] : []),
+    {
+      label: "Section",
+      selected: still && !full,
+      select: () => {
+        setStill(true);
+        setFull(false);
+      },
+    },
+    ...(screen.fullImagePath
+      ? [
+          {
+            label: "Full page",
+            selected: still && full,
+            select: () => {
+              setStill(true);
+              setFull(true);
+            },
+          },
+        ]
+      : []),
+  ];
   const [zoom, setZoom] = useState(false);
   const src = full && screen.fullImagePath ? screen.fullImagePath : screen.imagePath;
   const phone = screen.app.platform === "ios" || screen.app.platform === "android";
@@ -46,8 +71,10 @@ export function Viewer({ screen, prevHref, nextHref, nextImage, backHref }: Prop
       else if (e.key === "Escape") {
         if (zoom) setZoom(false);
         else router.push(backHref);
-      } else if (e.key === "f" && screen.fullImagePath) setFull((v) => !v);
-      else if (e.key === "z") setZoom((v) => !v);
+      } else if (e.key === "f" && screen.fullImagePath) {
+        setStill(true);
+        setFull((v) => !v);
+      } else if (e.key === "z") setZoom((v) => !v);
       else if (e.key === "s")
         toast(toggle(screen.id) ? "Saved to your shelf" : "Removed from your shelf");
     };
@@ -85,65 +112,76 @@ export function Viewer({ screen, prevHref, nextHref, nextImage, backHref }: Prop
               · {screen.tags.find((t) => t.kind === "pattern")?.name}
             </span>
           </Link>
-          {screen.fullImagePath && (
+          {tabs.length > 1 && (
             <div
               role="tablist"
               aria-label="Capture"
               className="ml-auto flex rounded-tile border border-rule bg-paper-sunken p-0.5 text-sm"
             >
-              {[
-                ["Section", false],
-                ["Full page", true],
-              ].map(([label, v]) => (
+              {tabs.map((t) => (
                 <button
-                  key={String(label)}
+                  key={t.label}
                   role="tab"
-                  aria-selected={full === v}
-                  onClick={() => setFull(v as boolean)}
+                  aria-selected={t.selected}
+                  onClick={t.select}
                   className={clsx(
                     "rounded-[4px] px-3 py-0.5",
-                    full === v ? "bg-paper-raised shadow-sm" : "text-ink-soft",
+                    t.selected ? "bg-paper-raised shadow-sm" : "text-ink-soft",
                   )}
                 >
-                  {label}
+                  {t.label}
                 </button>
               ))}
             </div>
           )}
-          <div className={clsx("flex gap-2", !screen.fullImagePath && "ml-auto")}>
+          <div className={clsx("flex gap-2", tabs.length < 2 && "ml-auto")}>
             <SaveButton id={screen.id} size="md" className="border border-rule" />
             <CopyButton src={src} size="md" className="border border-rule" />
           </div>
         </div>
 
         <div className="relative">
-          <button
-            type="button"
-            onClick={() => setZoom((z) => !z)}
-            aria-label={zoom ? "Zoom out" : "Zoom in"}
-            className={clsx("block w-full p-4 sm:p-8", zoom ? "cursor-zoom-out" : "cursor-zoom-in")}
-          >
-            <AnimatePresence mode="wait" initial={false}>
-              <motion.img
-                key={src}
-                src={src}
-                alt={screen.description ?? `${screen.app.name} capture`}
-                initial={{ opacity: 0, y: 6 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                className={clsx(
-                  "mx-auto h-auto border border-rule shadow-lift",
-                  phone ? "rounded-[28px]" : "rounded-tile",
-                  zoom
-                    ? "w-full max-w-none"
-                    : phone
-                      ? "max-h-[78vh] w-auto"
-                      : "max-h-[78vh] w-auto max-w-full object-contain",
-                )}
+          {!still && screen.video ? (
+            <div className="p-4 sm:p-8">
+              <ClipPlayer
+                src={screen.video}
+                poster={screen.imagePath}
+                controls
+                className="mx-auto max-h-[78vh] w-auto max-w-full rounded-tile border border-rule shadow-lift"
               />
-            </AnimatePresence>
-          </button>
+            </div>
+          ) : (
+            <button
+              type="button"
+              onClick={() => setZoom((z) => !z)}
+              aria-label={zoom ? "Zoom out" : "Zoom in"}
+              className={clsx(
+                "block w-full p-4 sm:p-8",
+                zoom ? "cursor-zoom-out" : "cursor-zoom-in",
+              )}
+            >
+              <AnimatePresence mode="wait" initial={false}>
+                <motion.img
+                  key={src}
+                  src={src}
+                  alt={screen.description ?? `${screen.app.name} capture`}
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                  className={clsx(
+                    "mx-auto h-auto border border-rule shadow-lift",
+                    phone ? "rounded-[28px]" : "rounded-tile",
+                    zoom
+                      ? "w-full max-w-none"
+                      : phone
+                        ? "max-h-[78vh] w-auto"
+                        : "max-h-[78vh] w-auto max-w-full object-contain",
+                  )}
+                />
+              </AnimatePresence>
+            </button>
+          )}
           {prevHref && (
             <Link
               href={prevHref}

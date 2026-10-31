@@ -35,6 +35,8 @@ export const filtersSchema = z.object({
     .transform((v) => v || undefined)
     .catch(undefined),
   sort: z.enum(SORTS).optional().catch(undefined),
+  /** "video": only items with a looping clip. */
+  has: z.enum(["video"]).optional().catch(undefined),
 });
 export type Filters = z.infer<typeof filtersSchema>;
 
@@ -73,6 +75,8 @@ export interface ScreenCard {
   color: string | null;
   createdAt: string;
   saveCount: number;
+  /** Muted looping clip; the image doubles as its poster. */
+  video: string | null;
   app: { name: string; slug: string; platform: Platform; iconPath: string | null };
   tags: Tag[];
 }

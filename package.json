@@ -12,7 +12,8 @@
     "db:seed": "tsx db/seed.ts",
     "samples": "tsx scripts/generate-samples.ts",
     "test": "vitest run",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "clips": "tsx scripts/generate-clips.ts"
   },
   "dependencies": {
     "clsx": "2.1.1",

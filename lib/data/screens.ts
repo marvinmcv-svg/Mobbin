@@ -32,6 +32,7 @@ function where(f: Filters, params: unknown[]) {
     );
   if (f.category) clauses.push(`c.slug = ${bind(f.category)}`);
   if (f.app) clauses.push(`a.slug = ${bind(f.app)}`);
+  if (f.has === "video") clauses.push("exists (select 1 from clips cl where cl.screen_id = s.id)");
   let rank = "0";
   if (f.q) {
     const q = bind(f.q);
@@ -54,6 +55,7 @@ const ORDER: Record<ReturnType<typeof effectiveSort>, string> = {
 
 const CARD_COLUMNS = `
   s.id, s.kind, s.image_path, s.width, s.height, s.dominant_colors[1] as color, s.created_at, s.save_count,
+  (select cl.video_path from clips cl where cl.screen_id = s.id order by cl.created_at limit 1) as video_path,
   a.name as app_name, a.slug as app_slug, a.platform, a.icon_path,
   coalesce((
     select json_agg(t order by t.ord, t.name) from (
@@ -78,6 +80,7 @@ interface CardRow {
   color: string | null;
   created_at: Date;
   save_count: number;
+  video_path: string | null;
   app_name: string;
   app_slug: string;
   platform: Platform;
@@ -94,6 +97,7 @@ function toCard(r: CardRow): ScreenCard {
     height: r.height,
     color: r.color,
     createdAt: r.created_at.toISOString(),
+    video: r.video_path,
     saveCount: r.save_count,
     app: { name: r.app_name, slug: r.app_slug, platform: r.platform, iconPath: r.icon_path },
     tags: r.tags,

@@ -176,6 +176,20 @@ export function BrowseShell({
             </label>
           ))}
 
+          <button
+            type="button"
+            aria-pressed={filters.has === "video"}
+            onClick={() => navigate({ has: filters.has === "video" ? undefined : "video" })}
+            className={clsx(
+              "rounded-tile border px-3 py-1.5 text-sm transition-colors duration-150",
+              filters.has === "video"
+                ? "border-ink bg-ink text-paper"
+                : "border-rule bg-paper-raised text-ink-soft hover:text-ink",
+            )}
+          >
+            ▶ Motion only
+          </button>
+
           <label className="relative ml-auto">
             <span className="sr-only">Sort</span>
             <select
